@@ -12,58 +12,100 @@
             --text-muted: #334155;
             --primary-blue: #2563eb;
             --primary-hover: #1d4ed8;
+            --dark-bg: #0f172a;
         }
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
-        .project-hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('portfolio-banner.png') no-repeat center center; background-size: cover; color: white; text-align: center; padding: 70px 20px; }
-        .content-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-        .info-block { background-color: var(--card-bg); border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+        .project-hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('portfolio-banner.png') no-repeat center center; background-size: cover; color: white; text-align: center; padding: 80px 20px; }
+        .project-hero h1 { font-size: 2.6rem; margin: 0 0 10px 0; }
+        .project-hero p { color: #cbd5e1; font-size: 1.1rem; margin: 0; }
+        .content-container { max-width: 950px; margin: 40px auto; padding: 0 20px; }
+        .info-block { background-color: var(--card-bg); border-radius: 12px; padding: 35px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
         .info-block h2 { font-size: 1.6rem; margin-top: 0; color: #1e293b; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
         .info-block p, .info-block li { font-size: 1.05rem; color: var(--text-muted); }
         .info-block ul { padding-left: 20px; }
-        .info-block li { margin-bottom: 10px; }
-        .btn-download { background-color: var(--primary-blue); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
+        .info-block li { margin-bottom: 12px; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .metric-card { background-color: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary-blue); text-align: center; }
+        .metric-value { font-size: 1.8rem; font-weight: bold; color: var(--primary-blue); margin-bottom: 5px; }
+        .metric-label { font-size: 0.9rem; color: #64748b; font-weight: 600; }
+        .footer-contact { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 30px; border-top: 2px solid #f1f5f9; padding-top: 25px; }
+        .btn-download { background-color: var(--primary-blue); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s; }
         .btn-download:hover { background-color: var(--primary-hover); }
+        .btn-contact { background-color: #1e293b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-size: 0.95rem; font-weight: 500; border: 1px solid #334155; transition: background-color 0.2s; }
+        .btn-contact:hover { background-color: #334155; }
     </style>
 </head>
 <body>
 
     <header class="project-hero">
-        <h1>Cycling Retail Sales Analysis</h1>
-        <p>End-to-End Business Performance Evaluation & Tableau Visualizations</p>
+        <h1>Cycling Retail Performance Analysis</h1>
+        <p>End-to-End Business Intelligence & Strategic Tableau Dashboards</p>
     </header>
 
     <div class="content-container">
-        
+
+        <!-- Section 1: Overview -->
         <section class="info-block">
-            <h2>Project Overview</h2>
-            <p>This project models transactional data frameworks and business workflows for a global cycling retail chain. Moving beyond raw record tracking, the objective was to design structural database integrity constraints and engineer comprehensive visual analytics to evaluate monthly revenue cycles, product category metrics, and organizational trends.</p>
+            <h2>Project Overview & Business Impact</h2>
+            <p>This business intelligence architecture models complex transactional data frameworks and logistical workflows for a global cycling retail chain. Moving far beyond static reporting, this project designs structured database schemas and interactive analytical frameworks to track sales operational metrics, evaluate monthly revenue cycles, and identify inventory lifecycle trends. The final dashboards serve as an executive-level control room to support real-time resource allocations and improve regional supply chain resilience.</p>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">BI</div>
+                    <div class="metric-label">Business Intelligence Stack</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Tableau</div>
+                    <div class="metric-label">Executive Dashboards Developed</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sales Ops</div>
+                    <div class="metric-label">Revenue Optimization Model</div>
+                </div>
+            </div>
         </section>
 
+        <!-- Section 2: Core Metrics Evaluated -->
         <section class="info-block">
-            <h2>Core Business Metrics Evaluated</h2>
+            <h2>Core Business Operations Evaluated</h2>
             <ul>
-                <li><strong>Sales & Revenue Operations:</strong> Identifying key seasonal revenue fluctuations and high-margin product categories.</li>
-                <li><strong>Inventory Optimization:</strong> Monitoring structural stock and fulfillment data points across regional distribution nodes.</li>
-                <li><strong>Customer Segments:</strong> Mapping purchasing trends and operational retention signals across demographics.</li>
+                <li><strong>Sales & Profitability Streams:</strong> Mapped and isolated hidden seasonal revenue fluctuations, identifying high-margin bike categories and product bundles to optimize marketing spend.</li>
+                <li><strong>Supply Chain & Inventory Optimization:</strong> Monitored product stock distribution curves and fulfillment delay signals across multi-regional warehouse nodes to minimize inventory holding costs.</li>
+                <li><strong>Customer Behavior & Demographics:</strong> Segmented transactional layers to identify high-value customer profiles, retention drops, and core purchasing trends over time.</li>
             </ul>
         </section>
 
+        <!-- Section 3: Technologies & Methodologies -->
         <section class="info-block">
-            <h2>Technologies & Methodologies Used</h2>
+            <h2>Technologies & Analytical Methodologies</h2>
             <ul>
-                <li><strong>Tableau Desktops:</strong> Designing interactive and dynamic executive-level metrics and dashboards for stakeholders.</li>
-                <li><strong>Database Engineering & Joins:</strong> Structural parsing and link tracking across multiple sales tables to ensure financial validation.</li>
-                <li><strong>Business Intelligence (BI) Dashboarding:</strong> Developing clean, user-centric visualizations for quick trend discovery.</li>
+                <li><strong>Tableau Desktop Architecture:</strong> Engineered comprehensive, interactive visual systems using calculated fields, parameter controls, and dynamic filtering for stakeholder review.</li>
+                <li><strong>Relational Data Modeling & Joining:</strong> Conducted structural data schema definitions, cleaning, and normalization across disparate sales, inventory, and location tables to validate financial records.</li>
+                <li><strong>Actionable Insight KPI Design:</strong> Formulated structured dashboard user interfaces to deliver lightning-fast data discovery and isolate underperforming assets at a single glance.</li>
             </ul>
         </section>
 
+        <!-- Section 4: Repository and Contact Info -->
         <section class="info-block">
-            <h2>Project Portfolio</h2>
-            <p>Explore the complete retail structures and visualization dashboards on GitHub:</p>
-            <a href="https://github.com" target="_blank" class="btn-download">📊 View Project Repository</a>
+            <h2>Project Portfolio & Dashboards</h2>
+            <p>Explore the complete retail schemas, analytical models, and visualization dashboards directly on GitHub:</p>
+            <div style="margin-bottom: 20px;">
+                <a href="https://github.com" target="_blank" class="btn-download">📊 View Complete Retail Project</a>
+            </div>
+
+            <h2>Connect with the Author</h2>
+            <p>If you have questions about this business intelligence project, feel free to reach out:</p>
+            <div class="footer-contact">
+                <a href="mailto:AsafChechik9@gmail.com" class="btn-contact">✉️ AsafChechik9@gmail.com</a>
+                <a href="https://linkedin.com" target="_blank" class="btn-contact">🔗 LinkedIn Profile</a>
+            </div>
         </section>
 
     </div>
+
+</body>
+</html>
+
 
 </body>
 </html>
