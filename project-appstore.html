@@ -12,57 +12,100 @@
             --text-muted: #334155;
             --primary-blue: #2563eb;
             --primary-hover: #1d4ed8;
+            --dark-bg: #0f172a;
         }
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
-        .project-hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('portfolio-banner.png') no-repeat center center; background-size: cover; color: white; text-align: center; padding: 70px 20px; }
-        .content-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-        .info-block { background-color: var(--card-bg); border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+        .project-hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('portfolio-banner.png') no-repeat center center; background-size: cover; color: white; text-align: center; padding: 80px 20px; }
+        .project-hero h1 { font-size: 2.6rem; margin: 0 0 10px 0; }
+        .project-hero p { color: #cbd5e1; font-size: 1.1rem; margin: 0; }
+        .content-container { max-width: 950px; margin: 40px auto; padding: 0 20px; }
+        .info-block { background-color: var(--card-bg); border-radius: 12px; padding: 35px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
         .info-block h2 { font-size: 1.6rem; margin-top: 0; color: #1e293b; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
         .info-block p, .info-block li { font-size: 1.05rem; color: var(--text-muted); }
         .info-block ul { padding-left: 20px; }
-        .info-block li { margin-bottom: 10px; }
-        .btn-download { background-color: var(--primary-blue); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
+        .info-block li { margin-bottom: 12px; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .metric-card { background-color: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary-blue); text-align: center; }
+        .metric-value { font-size: 1.8rem; font-weight: bold; color: var(--primary-blue); margin-bottom: 5px; }
+        .metric-label { font-size: 0.9rem; color: #64748b; font-weight: 600; }
+        .footer-contact { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 30px; border-top: 2px solid #f1f5f9; padding-top: 25px; }
+        .btn-download { background-color: var(--primary-blue); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s; }
         .btn-download:hover { background-color: var(--primary-hover); }
+        .btn-contact { background-color: #1e293b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-size: 0.95rem; font-weight: 500; border: 1px solid #334155; transition: background-color 0.2s; }
+        .btn-contact:hover { background-color: #334155; }
     </style>
 </head>
 <body>
 
     <header class="project-hero">
-        <h1>Google Play Store Market Analysis</h1>
-        <p>Advanced Database Analytics & SQL Engineering | 1.2M Records</p>
+        <h1>Google Play Store Market Analytics</h1>
+        <p>Advanced Database Analytics & SQL Engineering | 1.2M Application Records</p>
     </header>
 
     <div class="content-container">
-        
+
+        <!-- Section 1: Overview -->
         <section class="info-block">
-            <h2>Project Overview</h2>
-            <p>An end-to-end data evaluation focusing on application metrics, category distribution, and development lifecycle indicators across the Google Play ecosystem. By writing comprehensive query matrixes, this analysis extracts platform performance trends to back strategic developer monetization choices.</p>
+            <h2>Project Overview & Business Value</h2>
+            <p>This data evaluation deploys advanced relational database architectures to extract ecosystem trends across <strong>1,200,000 application records</strong> in the Google Play ecosystem. By writing comprehensive, production-grade query matrixes, the database engineering models metrics around installation thresholds, localization performance, and category saturations. The final architecture transforms heavy logging layers into critical market indicators to optimize long-term application monetization strategies and developer market footprint.</p>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">1.2M+</div>
+                    <div class="metric-label">Records Query Analyzed</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">4.2★</div>
+                    <div class="metric-label">Ecosystem Rating Baseline</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">ETL</div>
+                    <div class="metric-label">Data Sanitization Applied</div>
+                </div>
+            </div>
         </section>
 
+        <!-- Section 2: Business Questions -->
         <section class="info-block">
-            <h2>Business Questions Explored</h2>
+            <h2>Core Business Questions Addressed</h2>
             <ul>
-                <li>Which market tiers yield the highest category installation baselines?</li>
-                <li>How do updates and patch frequency heavily impact ongoing application ratings?</li>
-                <li>What installation patterns strongly correlate with organic application visibility?</li>
+                <li><strong>Monetization Models:</strong> Which market tiers and application sizes yield the highest user acquisition thresholds across specific categories?</li>
+                <li><strong>Product Lifecycle Management:</strong> How do systematic iteration intervals and active patch frequencies directly affect application conversion curves and ongoing user scores?</li>
+                <li><strong>Visibility Optimization:</strong> What installation benchmarks, review ratios, and metadata attributes strongly correlate with organic algorithm placement in target categories?</li>
             </ul>
         </section>
 
+        <!-- Section 3: Technical SQL Stack -->
         <section class="info-block">
-            <h2>Technical Implementations (SQL)</h2>
+            <h2>Technical Implementations & SQL Techniques</h2>
             <ul>
-                <li><strong>Window Functions & Ranking:</strong> Evaluating highest performers across specific category clusters.</li>
-                <li><strong>Common Table Expressions (CTEs):</strong> Building multi-layered logical architectures to manage heavy data computing.</li>
-                <li><strong>Data Cleaning Pipelines:</strong> Handling text formatting anomalies, parsing metrics, and purging unmapped record structures.</li>
+                <li><strong>Window Functions & Ranking Matrixes:</strong> Leveraged <code>RANK()</code>, <code>DENSE_RANK()</code>, and partition filtering to extract market leaders and isolate outlier velocity markers inside dynamic groups.</li>
+                <li><strong>Common Table Expressions (CTEs):</strong> Engineered modular, highly elegant query hierarchies to isolate complex operational layers before execution, optimizing memory usage on broad datasets.</li>
+                <li><strong>Robust Data Ingestion & Sanitization:</strong> Formulated defensive database logic using conditional groupings, type casting, and string manipulation techniques to purge unmapped fields and anomalies.</li>
             </ul>
         </section>
 
+        <!-- Section 4: Repository and Contact Info -->
         <section class="info-block">
-            <h2>Project Repository</h2>
-            <a href="https://github.com" target="_blank" class="btn-download">💻 View GitHub Repository</a>
+            <h2>Project Repository & Source Files</h2>
+            <p>Access the structural schema definitions, script pipelines, and comprehensive documentation sets directly on GitHub:</p>
+            <div style="margin-bottom: 20px;">
+                <a href="https://github.com" target="_blank" class="btn-download">💻 View Complete SQL Repository</a>
+            </div>
+
+            <h2>Connect with the Author</h2>
+            <p>If you have questions about this database architecture, feel free to reach out:</p>
+            <div class="footer-contact">
+                <a href="mailto:AsafChechik9@gmail.com" class="btn-contact">✉️ AsafChechik9@gmail.com</a>
+                <a href="https://linkedin.com" target="_blank" class="btn-contact">🔗 LinkedIn Profile</a>
+            </div>
         </section>
 
     </div>
+
+</body>
+</html>
+
 
 </body>
 </html>
