@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Play Store Analysis | Asaf Chechik</title>
+    <style>
+        :root {
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #334155;
+            --primary-blue: #2563eb;
+            --primary-hover: #1d4ed8;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+        .project-hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('portfolio-banner.png') no-repeat center center; background-size: cover; color: white; text-align: center; padding: 70px 20px; }
+        .content-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .info-block { background-color: var(--card-bg); border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .info-block h2 { font-size: 1.6rem; margin-top: 0; color: #1e293b; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
+        .info-block p, .info-block li { font-size: 1.05rem; color: var(--text-muted); }
+        .info-block ul { padding-left: 20px; }
+        .info-block li { margin-bottom: 10px; }
+        .btn-download { background-color: var(--primary-blue); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
+        .btn-download:hover { background-color: var(--primary-hover); }
+    </style>
+</head>
+<body>
+
+    <header class="project-hero">
+        <h1>Google Play Store Market Analysis</h1>
+        <p>Advanced Database Analytics & SQL Engineering | 1.2M Records</p>
+    </header>
+
+    <div class="content-container">
+        
+        <section class="info-block">
+            <h2>Project Overview</h2>
+            <p>An end-to-end data evaluation focusing on application metrics, category distribution, and development lifecycle indicators across the Google Play ecosystem. By writing comprehensive query matrixes, this analysis extracts platform performance trends to back strategic developer monetization choices.</p>
+        </section>
+
+        <section class="info-block">
+            <h2>Business Questions Explored</h2>
+            <ul>
+                <li>Which market tiers yield the highest category installation baselines?</li>
+                <li>How do updates and patch frequency heavily impact ongoing application ratings?</li>
+                <li>What installation patterns strongly correlate with organic application visibility?</li>
+            </ul>
+        </section>
+
+        <section class="info-block">
+            <h2>Technical Implementations (SQL)</h2>
+            <ul>
+                <li><strong>Window Functions & Ranking:</strong> Evaluating highest performers across specific category clusters.</li>
+                <li><strong>Common Table Expressions (CTEs):</strong> Building multi-layered logical architectures to manage heavy data computing.</li>
+                <li><strong>Data Cleaning Pipelines:</strong> Handling text formatting anomalies, parsing metrics, and purging unmapped record structures.</li>
+            </ul>
+        </section>
+
+        <section class="info-block">
+            <h2>Project Repository</h2>
+            <a href="https://github.com" target="_blank" class="btn-download">💻 View GitHub Repository</a>
+        </section>
+
+    </div>
+
+</body>
+</html>
