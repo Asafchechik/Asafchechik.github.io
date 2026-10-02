@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asaf Chechik | Data Analytics Portfolio</title>
+    
+    <!-- LinkedIn Preview Optimization (Open Graph Tags) -->
+    <meta property="og:title" content="Asaf Chechik | Professional Data Portfolio">
+    <meta property="og:description" content="A showcase of my end-to-end data projects, featuring large-scale data audits with Python, database engineering with SQL Server, and business intelligence with Tableau.">
+    <meta property="og:image" content="https://github.io">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.io">
+
     <style>
         :root {
             --bg-color: #f8fafc;
@@ -24,6 +34,7 @@
             line-height: 1.6;
         }
 
+        /* Displays your portfolio-banner.png in full clarity */
         .hero-section {
             background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7)), url('portfolio-banner.png') no-repeat center center;
             background-size: cover;
@@ -71,6 +82,7 @@
             font-weight: 500;
         }
 
+        /* Contact Buttons */
         .contact-info {
             display: flex;
             justify-content: center;
@@ -92,6 +104,7 @@
             border: 1px solid #475569;
             backdrop-filter: blur(4px);
             transition: all 0.2s ease;
+            text-shadow: none;
         }
 
         .contact-btn:hover {
@@ -100,6 +113,7 @@
             transform: translateY(-2px);
         }
 
+        /* Main Content Container */
         .container {
             max-width: 1200px;
             margin: 50px auto;
@@ -114,12 +128,14 @@
             color: var(--dark-bg);
         }
 
+        /* Projects Responsive Grid */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
         }
 
+        /* Project Card Component */
         .project-card {
             background-color: var(--card-bg);
             border-radius: 12px;
@@ -192,6 +208,7 @@
 </head>
 <body>
 
+    <!-- Header Section with your customized banner and profile image background -->
     <header class="hero-section">
         <div class="hero-container">
             <img src="profile.jpg" alt="Asaf Chechik" class="profile-img" onerror="this.style.display='none';">
@@ -202,7 +219,7 @@
                 I am an analytical Analyst experienced in financial operations, data control, and business reporting. 
                 My focus centers on ensuring data integrity, optimizing workflows, and translating operational metrics 
                 into structured, actionable insights that support decision-making. I actively leverage my technical stack 
-                across SQL, Python, Power BI, and Excel to solve complex problems and drive strategic business value.
+                across SQL, Python, Power BI, and Executive reporting to solve complex problems and drive strategic business value.
             </p>
 
             <div class="contact-info">
@@ -212,6 +229,7 @@
         </div>
     </header>
 
+    <!-- Projects Grid Section -->
     <main class="container">
         <h2 class="section-title">Featured Portfolio Projects</h2>
         
@@ -224,7 +242,7 @@
                     <h3 class="card-title">Google Play Store Market Analysis</h3>
                     <p class="card-description">Processed and analyzed a dataset of ~1.2M records using SQL Server to evaluate application performances, update frequencies, and key monetization categories.</p>
                     <div class="card-footer">
-                        <a href="project-appstore.html" class="card-button">View Project Code</a>
+                        <a href="./project-appstore.html" class="card-button">View Project Code</a>
                     </div>
                 </div>
             </div>
@@ -236,7 +254,7 @@
                     <h3 class="card-title">Steam User Reviews Analysis</h3>
                     <p class="card-description">Engineered custom Python frameworks using Pandas and NumPy to clean, parse, and conduct deep-dive exploratory data analysis (EDA) on 6.4 million user reviews.</p>
                     <div class="card-footer">
-                        <a href="project-steam.html" class="card-button">View Project Code</a>
+                        <a href="./project-steam.html" class="card-button">View Project Code</a>
                     </div>
                 </div>
             </div>
@@ -248,7 +266,7 @@
                     <h3 class="card-title">Cycling Retail Sales Analysis</h3>
                     <p class="card-description">An end-to-end retail performance evaluation project mapping transactional business structures, workflows, and database engineering principles.</p>
                     <div class="card-footer">
-                        <a href="project-cycling.html" class="card-button">View Project</a>
+                        <a href="./project-cycling.html" class="card-button">View Project</a>
                     </div>
                 </div>
             </div>
@@ -258,5 +276,6 @@
 
 </body>
 </html>
+
 
 
