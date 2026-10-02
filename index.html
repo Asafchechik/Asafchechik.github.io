@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asaf Chechik | Data Analytics Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --primary-blue: #2563eb;
+            --primary-hover: #1d4ed8;
+            --dark-bg: #0f172a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Fixed Banner Background: Displays your portfolio-banner.png with optimized readability */
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.6)), url('portfolio-banner.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 850px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-section h1 {
+            margin: 0 0 10px 0;
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+
+        .hero-subtitle {
+            color: #38bdf8;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .about-text {
+            color: #f1f5f9;
+            font-size: 1.15rem;
+            text-align: justify;
+            text-align-last: center;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* Contact Buttons */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(15, 23, 42, 0.85);
+            color: #f1f5f9;
+            padding: 11px 22px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: 1px solid #475569;
+            backdrop-filter: blur(4px);
+            transition: all 0.2s ease;
+            text-shadow: none;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 15px;
+            color: var(--dark-bg);
+        }
+
+        /* Projects Responsive Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Project Card Component */
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 160px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #38bdf8;
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #334155;
+        }
+
+        .card-content {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.35rem;
+            margin: 0 0 12px 0;
+            color: var(--dark-bg);
+        }
+
+        .card-description {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            margin-top: auto;
+        }
+
+        .card-button {
+            display: block;
+            background-color: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .card-button:hover {
+            background-color: var(--primary-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with your customized banner background -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <h1>Asaf Chechik</h1>
+            <div class="hero-subtitle">Incoming M.Sc. Student in Data Analytics</div>
+            
+            <p class="about-text">
+                I am an analytical Analyst experienced in financial operations, data control, and business reporting. 
+                My focus centers on ensuring data integrity, optimizing workflows, and translating operational metrics 
+                into structured, actionable insights that support decision-making. I actively leverage my technical stack 
+                across SQL, Python, Power BI, and Excel to solve complex problems and drive strategic business value.
+            </p>
+
+            <div class="contact-info">
+                <a href="mailto:AsafChechik9@gmail.com" class="contact-btn">✉️ AsafChechik9@gmail.com</a>
+                <a href="https://linkedin.com" target="_blank" class="contact-btn">🔗 LinkedIn Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Grid Section -->
+    <main class="container">
+        <h2 class="section-title">Featured Portfolio Projects</h2>
+        
+        <div class="projects-grid">
+            
+            <!-- Card 1: Google AppStore Analysis -->
+            <div class="project-card">
+                <div class="card-image">📊 SQL SERVER</div>
+                <div class="card-content">
+                    <h3 class="card-title">Google Play Store Market Analysis</h3>
+                    <p class="card-description">Processed and analyzed a dataset of ~1.2M records using SQL Server to evaluate application performances, update frequencies, and key monetization categories.</p>
+                    <div class="card-footer">
+                        <a href="https://github.com" target="_blank" class="card-button">View Project Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Steam User Reviews Analysis -->
+            <div class="project-card">
+                <div class="card-image">🐍 PYTHON (EDA)</div>
+                <div class="card-content">
+                    <h3 class="card-title">Steam User Reviews Analysis</h3>
+                    <p class="card-description">Engineered custom Python frameworks using Pandas and NumPy to clean, parse, and conduct deep-dive exploratory data analysis (EDA) on 6.4 million user reviews.</p>
+                    <div class="card-footer">
+                        <a href="https://github.com" target="_blank" class="card-button">View Project Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Cycling Retail Analysis -->
+            <div class="project-card">
+                <div class="card-image">🚴 TABLEAU / BUSINESS</div>
+                <div class="card-content">
+                    <h3 class="card-title">Cycling Retail Sales Analysis</h3>
+                    <p class="card-description">An end-to-end retail performance evaluation project mapping transactional business structures, workflows, and database engineering principles.</p>
+                    <div class="card-footer">
+                        <a href="https://github.com" target="_blank" class="card-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
